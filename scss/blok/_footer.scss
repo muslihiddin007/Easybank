@@ -1,0 +1,176 @@
+.footer{
+    background-color: #2D314D;
+    padding: 48px 0;
+    &__info{
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    &__icons{
+        margin-left: -38px;
+        list-style: none;
+        display: flex;
+        margin-top: 50px;
+        &>li+li{
+            margin-left: 13px;
+        }
+        &>li>a>svg:hover path{
+            fill: #30C88F;
+        }
+    }
+    &__navbar{
+        display: flex;
+        margin-left: auto;
+        &>ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-top: 0;
+        }
+        &>ul+ul{
+            margin-left: 120px;
+        }
+        &>ul>li>a{
+            text-decoration: none;
+            font-family: 'Public Sans';
+            font-size: 15px;
+            line-height: 40px;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;    
+            &:hover{
+                color: #30C88F;
+            }        
+        }
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: auto;
+       &>button{
+            border: none;
+            padding: 8px 33px;
+            background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+            border-radius: 22px;
+            font-family: 'Public Sans',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+            color: #FFFFFF; 
+            &:hover{
+                opacity: 0.4;
+                cursor: pointer;
+            }  
+       }
+       &>p{
+        margin-top: 30px;
+        font-family: 'Public Sans',sans-serif;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: right;
+        letter-spacing: -0.234375px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;        
+       }
+    }
+}
+@media screen and (max-width:428px) {
+    .footer{
+        background-color: #2D314D;
+        padding: 48px 0;
+        &__info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+        &__icons{
+            margin-left: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin-top: 50px;
+            &>li+li{
+                margin-left: 13px;
+            }
+            &>li>a>svg:hover path{
+                fill: #30C88F;
+            }
+        }
+        &__navbar{
+            padding: 0;
+            flex-direction: column;
+            display: flex;
+            margin-left: 0;
+            &>ul{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                margin: 0;
+            }
+            &>ul+ul{
+                margin-left: 0;
+            }
+            &>ul>li>a{
+                text-decoration: none;
+                font-family: 'Public Sans',sans-serif;
+                font-size: 15px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: -0.234375px;
+                color: #FFFFFF;   
+                &:hover{
+                    color: #30C88F;
+                }        
+            }
+        }
+        &__box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+           &>button{
+            margin-top: 30px;
+                border: none;
+                padding: 8px 33px;
+                background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+                border-radius: 22px;
+                font-family: 'Public Sans',sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 28px;
+                color: #FFFFFF;
+                &:hover{
+                    opacity: 0.4;
+                    cursor: pointer;
+                }  
+           }
+           &>p{
+            margin-top: 30px;
+            font-family: 'Public Sans',sans-serif;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;  
+           }
+        }
+    }
+}
